@@ -7,6 +7,6 @@ services:
     image: tarampampam/error-pages:latest
     environment:
       TEMPLATE_NAME: matrix
-      SHOW_DETAILS: true
+      SHOW_DETAILS: "true"
     ports:
       - '8080:8080'
