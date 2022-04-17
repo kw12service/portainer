@@ -1,0 +1,13 @@
+# Docker Compose error-pages
+
+version: '3.7'
+
+services:
+
+  db:
+    image: mariadb
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD_FILE: ./docker/.secrets/mysql-root
+    volumes:
+      - /docker/mariadb/data:/var/lib/mysql
